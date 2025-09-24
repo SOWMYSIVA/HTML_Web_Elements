@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aadhaar application</title>
+</head>
+<body>
+<h1><center><font color="Grey"><em>Aadhaar Application form</em></font></center></h1>
+<fieldset>
+<legend><cite><abbr title="Unique Identification Authority of India">UIDAI</abbr></cite></legend>
+<form method="post" action="/register">
+
+<table  align="center">
+<tr>
+<td>
+Application Date: 
+</td>
+<td><input type="date" name="applyDate">
+</td></tr>
+<tr>
+<td>Name: 
+</td>
+<td><input type="text" name="name" placeholder="Applicant's Name" required> 
+</td>
+</tr>
+<tr>
+<td>Age:</td>
+<td><input type="number" name="age"></td>
+</tr>
+<tr>
+<td>Gender: </td>
+<td><input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="others">Others</td>
+</tr>
+<tr>
+<td>Date of Birth:</td><td> <input type="date" name="dob" required></td>
+</tr>
+<tr>
+<td>Email address:</td>
+<td><input type="email" name="email" required></td>
+</tr>
+<tr>
+<td>Phone number:</td>
+<td><input type="tel" name="phone" required></td>
+</tr>
+<tr>
+<td>Upload your photo:</td>
+<td><input type="file" name="photo" accept=".jpg"></td>
+</tr>
+<tr>
+<td>Any ID proof available: </td>
+<td><input type="checkbox" name="proof" value="pancard">Pan Card
+<input type="checkbox" name="proof" value="birthcertificate">Birth certificate</td>
+</tr>
+<tr>
+<td>If available, provide proof Id number: </td>
+<td><input type="text" name="idnumber"></td>
+</tr>
+<tr>
+<td>Upload Proof: </td>
+<td><input type="file" name="prooffile" accept=".pdf" required></td>
+</tr>
+<tr>
+<td>Address:
+</td>
+<td><textarea rows="3" cols="25" name="address" ></textarea></td>
+</tr>
+<tr>
+<td>State:</td><td><input type="text" name="state"></td>
+</tr>
+<td>PinCode:</td><td><input type="number" name="pincode"></td>
+</tr>
+<tr><td>
+Nationality:</td><td><select name="nationality">
+<option value="indian">Indian</option>
+<option value="others">Others</option>
+</select></td>
+</tr>
+<tr><td><strong>Support Person:</strong></td><td> <select name="supportproof">
+<option value="father">Father</option>
+<option value="mother">Mother</option>
+<option value="spouse">Spouse</option>
+<option value="guardian">Guardian</option>
+</select></td>
+</tr>
+<tr><td>
+Support person's ID proof:</td><td><input type="checkbox" name="SupportIdproof" value="aadhaarcard">Aadhaar card 
+<input type="checkbox" name="SupportIdproof" value="pancard">Pan card </td>
+</tr>
+<tr><td>
+If available,provide ID number:</td><td> <input type="text" name="supportIdnumber"></td>
+</tr>
+<tr><td>
+Reason for applying aadhaar card,</td><td>
+<input type="radio" name="reason" value="firsttime">First time applicant
+<input type="radio" name="reason" value="lost">Lost the existing card</td>
+</tr>
+<tr ><td colspan="2">
+<input type="submit" value="Apply">
+<button type="reset" >Reset</button>
+</td></tr>
+</table>
+</form>
+</fieldset>
+
+</body>
+</html>
